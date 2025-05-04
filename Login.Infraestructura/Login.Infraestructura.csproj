@@ -15,4 +15,13 @@
     <Folder Include="Persistences\Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Login.Domain\Login.Domain.csproj" />
+    <ProjectReference Include="..\Login.Utilities\Login.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
