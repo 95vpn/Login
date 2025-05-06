@@ -10,12 +10,12 @@
     <Folder Include="Dtos\" />
     <Folder Include="Helpers\" />
     <Folder Include="Extensions\" />
-    <Folder Include="Persistences\Contexts\" />
     <Folder Include="Persistences\Interfaces\" />
     <Folder Include="Persistences\Repositories\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.2" />
   </ItemGroup>
 
