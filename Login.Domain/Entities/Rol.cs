@@ -8,14 +8,9 @@ using System.Threading.Tasks;
 
 namespace Login.Domain.Entities
 {
-    public class Persona
+    public class Rol
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id_Persona { get; set; }
-        public string? Nombres { get; set; }
-        public string? Apellidos { get; set; }
-        public string? Identificion { get; set; }
-        public string? FechaNacimineto { get; set; }
     }
 }
