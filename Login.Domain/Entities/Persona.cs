@@ -17,5 +17,10 @@ namespace Login.Domain.Entities
         public string? Apellidos { get; set; }
         public string? Identificion { get; set; }
         public string? FechaNacimineto { get; set; }
+
+        
+        
+
+
     }
 }

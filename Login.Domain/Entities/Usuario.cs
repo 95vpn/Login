@@ -17,7 +17,13 @@ namespace Login.Domain.Entities
         public string? Password { get; set; }
         public string? Email { get; set; }
         public string? SessioActive { get; set; }
-        public int PersonaIdPersona2 { get; set; }
         public string? Status { get; set; }
+
+        //Foreing key Persona
+        public int IdPersona { get; set; }
+        public Persona Persona { get; set; }
+        
+
+
     }
 }
