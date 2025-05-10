@@ -12,7 +12,7 @@ namespace Login.Domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdUsuario { get; set; }
+        public int UsuarioId { get; set; }
         public string? UserName { get; set; }
         public string? Password { get; set; }
         public string? Email { get; set; }
@@ -20,7 +20,7 @@ namespace Login.Domain.Entities
         public string? Status { get; set; }
 
         //Foreing key Persona
-        public int IdPersona { get; set; }
+        public int PersonaId { get; set; }
         public Persona Persona { get; set; }
         
 

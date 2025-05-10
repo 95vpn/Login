@@ -12,13 +12,13 @@ namespace Login.Domain.Entities
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id_Persona { get; set; }
+        public int PersonaId { get; set; }
         public string? Nombres { get; set; }
         public string? Apellidos { get; set; }
         public string? Identificion { get; set; }
         public string? FechaNacimineto { get; set; }
 
-        
+        public Usuario Usuario { get; set; }
         
 
 
