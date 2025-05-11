@@ -22,6 +22,8 @@ namespace Login.Domain.Entities
         //Foreing key Persona
         public int PersonaId { get; set; }
         public Persona Persona { get; set; }
+
+        public ICollection<Session> Sesiones { get; set; } = new List<Session>();
         
 
 
