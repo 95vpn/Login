@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Login.Domain.Entities
 {
-    public class Session
+    public class RolUsuario
     {
-        public DateTime FechaIngreso { get; set; }
-        public DateTime FechaCierre { get; set; }
+        public int RolIdRol {  get; set; }
+        public Rol Rol { get; set; }
 
 
-        public int UsuarioId { get; set; }
+        public int UsuariosIdUsuario { get; set; }
         public Usuario Usuario { get; set; }
     }
 }
