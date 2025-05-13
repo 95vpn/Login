@@ -17,5 +17,7 @@ namespace Login.Domain.Entities
 
         public ICollection<RolUsuario> RolesUsuarios { get; set; } = new List<RolUsuario>();
 
+        public ICollection<RolRolOpcion> RolesRolOpciones { get; set; } = new List<RolRolOpcion>();
+
     }
 }

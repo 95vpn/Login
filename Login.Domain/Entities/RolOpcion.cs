@@ -8,11 +8,13 @@ using System.Threading.Tasks;
 
 namespace Login.Domain.Entities
 {
-    internal class RolOpcion
+    public class RolOpcion
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OpcionId { get; set; }
-        public string NombreOpcion { get; set; }
+        public string  NombreOpcion { get; set; }
+
+        public ICollection<RolRolOpcion> RolesRolOpciones { get; set; } = new List<RolRolOpcion>();
     }
 }
