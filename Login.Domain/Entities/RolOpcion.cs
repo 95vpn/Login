@@ -13,7 +13,7 @@ namespace Login.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OpcionId { get; set; }
-        public string  NombreOpcion { get; set; }
+        public string  NombreOpcion { get; set; } = null;
 
         public ICollection<RolRolOpcion> RolesRolOpciones { get; set; } = new List<RolRolOpcion>();
     }

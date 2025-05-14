@@ -13,7 +13,7 @@ namespace Login.Domain.Entities
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RolId {  get; set; }
-        public string RolName { get; set; }
+        public string RolName { get; set; } = null;
 
         public ICollection<RolUsuario> RolesUsuarios { get; set; } = new List<RolUsuario>();
 
