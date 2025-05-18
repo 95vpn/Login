@@ -8,6 +8,7 @@ namespace Login.Domain.Entities
 {
     public class Session
     {
+        public int SessionId { get; set; }
         public DateTime FechaIngreso { get; set; }
         public DateTime FechaCierre { get; set; }
 
