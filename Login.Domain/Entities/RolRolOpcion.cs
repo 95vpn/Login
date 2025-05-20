@@ -8,11 +8,11 @@ namespace Login.Domain.Entities
 {
     public class RolRolOpcion
     {
-        public int RolIdRol {  get; set; }
+        public int RolId {  get; set; }
         public Rol Rol { get; set; }
 
 
-        public int RolOpcionesIdOpcion {  get; set; }
+        public int RolOpcionId {  get; set; }
         public RolOpcion RolOpcion { get; set; }
     }
 }
