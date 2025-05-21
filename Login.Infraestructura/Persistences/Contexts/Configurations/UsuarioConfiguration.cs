@@ -39,6 +39,7 @@ namespace Login.Infraestructura.Persistences.Contexts.Configurations
                        .HasMaxLength(10)
                        .IsUnicode(false);
 
+                
                 // Relación uno a uno con Persona (ya configurada en PersonaConfiguration)
                 builder.HasOne(u => u.Persona)
                        .WithOne(p => p.Usuario)

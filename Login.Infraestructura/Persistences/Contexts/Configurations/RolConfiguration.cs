@@ -19,7 +19,13 @@ namespace Login.Infraestructura.Persistences.Contexts.Configurations
                 .IsRequired()
                 .HasMaxLength(100);
 
+            builder.HasMany(r => r.RolesUsuarios)
+                .WithOne(ru => ru.Rol)
+                .HasForeignKey(ru => ru.RolId);
 
+            builder.HasMany(r => r.RolesRolOpciones)
+                .WithOne(rro => rro.Rol)
+                .HasForeignKey(rro => rro.RolId);
         }
     }
 }
