@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Login.Domain.Entities;
@@ -23,5 +24,10 @@ namespace Login.Infraestructura.Persistences.Contexts
         public DbSet<RolUsuario> RolesUsuarios { get; set; }
 
         public DbSet<RolRolOpcion> RolesRolOpciones { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
     }
 }
