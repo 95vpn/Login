@@ -9,5 +9,9 @@ namespace Login.Infraestructura.Persistences.Interfaces
     internal interface IUnitOfWork : IDisposable
     {
         IUsuarioRepository Usuario { get; }
+
+        void SaveChanges();
+
+        Task SaveChangesAsync();
     }
 }
