@@ -11,21 +11,26 @@ namespace Login.Infraestructura.Persistences.Repositories
     internal class UnitOfWork : IUnitOfWork
     {
         private readonly LoginContext _context;
-        public IUsuarioRepository Usuario => throw new NotImplementedException();
+        public IUsuarioRepository Usuario { get; }
+
+        public UnitOfWork(LoginContext context)
+        {
+            _context = context;
+        }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            _context.Dispose();
         }
 
         public void SaveChanges()
         {
-            throw new NotImplementedException();
+            _context.SaveChanges();
         }
 
-        public Task SaveChangesAsync()
+        public async Task SaveChangesAsync()
         {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
     }
 }
