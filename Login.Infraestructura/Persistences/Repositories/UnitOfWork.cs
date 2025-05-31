@@ -21,6 +21,7 @@ namespace Login.Infraestructura.Persistences.Repositories
         public void Dispose()
         {
             _context.Dispose();
+            Usuario = new UsuarioRepository(_context);
         }
 
         public void SaveChanges()
